@@ -1,0 +1,594 @@
+[
+  {
+    "source_card_name": "A Most Helpful Weaver",
+    "target_scryfall_url": "https://scryfall.com/card/om1/14/origin-of-spider-man"
+  },
+  {
+    "source_card_name": "A Trail of Teacups",
+    "target_scryfall_url": "https://scryfall.com/card/om1/121/kravens-last-hunt"
+  },
+  {
+    "source_card_name": "Ademi of the Silkchutes",
+    "target_scryfall_url": "https://scryfall.com/card/om1/1/spectacular-spider-man"
+  },
+  {
+    "source_card_name": "Aggressive Symbiosis",
+    "target_scryfall_url": "https://scryfall.com/card/om1/49/alien-symbiosis"
+  },
+  {
+    "source_card_name": "Alenni, Brood Recruiter",
+    "target_scryfall_url": "https://scryfall.com/card/om1/123/silk-web-weaver"
+  },
+  {
+    "source_card_name": "Alessos and Pras, Acrobats",
+    "target_scryfall_url": "https://scryfall.com/card/om1/124/spider-man-india"
+  },
+  {
+    "source_card_name": "Ancestral Carvings",
+    "target_scryfall_url": "https://scryfall.com/card/om1/99/pictures-of-spider-man"
+  },
+  {
+    "source_card_name": "Angler's Shield",
+    "target_scryfall_url": "https://scryfall.com/card/om1/125/biorganic-carapace"
+  },
+  {
+    "source_card_name": "Arachnomania",
+    "target_scryfall_url": "https://scryfall.com/card/om1/75/spider-verse"
+  },
+  {
+    "source_card_name": "Arala, Hedron Scaler",
+    "target_scryfall_url": "https://scryfall.com/card/om1/25/beetle-legacy-criminal"
+  },
+  {
+    "source_card_name": "Archangler's Skyrod",
+    "target_scryfall_url": "https://scryfall.com/card/om1/2/web-shooters"
+  },
+  {
+    "source_card_name": "Argyr, Tidal Spinner",
+    "target_scryfall_url": "https://scryfall.com/card/om1/26/spider-byte-web-warden"
+  },
+  {
+    "source_card_name": "Bane-Marked Leonin",
+    "target_scryfall_url": "https://scryfall.com/card/om1/50/venomized-cat"
+  },
+  {
+    "source_card_name": "Basil, Cabaretti Loudmouth",
+    "target_scryfall_url": "https://scryfall.com/card/om1/3/flash-thompson-spider-fan"
+  },
+  {
+    "source_card_name": "Bayo, Irritable Instructor",
+    "target_scryfall_url": "https://scryfall.com/card/om1/76/electro-assaulting-battery"
+  },
+  {
+    "source_card_name": "Belion, the Parched",
+    "target_scryfall_url": "https://scryfall.com/card/om1/27/hydro-man-fluid-felon"
+  },
+  {
+    "source_card_name": "Borys, the Spider Rider",
+    "target_scryfall_url": "https://scryfall.com/card/om1/126/scarlet-spider-ben-reilly"
+  },
+  {
+    "source_card_name": "Brako, Heartless Hunter",
+    "target_scryfall_url": "https://scryfall.com/card/om1/127/kraven-the-hunter"
+  },
+  {
+    "source_card_name": "Cactarantula Saddle",
+    "target_scryfall_url": "https://scryfall.com/card/om1/161/spider-suit"
+  },
+  {
+    "source_card_name": "Caldaia Brawlers",
+    "target_scryfall_url": "https://scryfall.com/card/om1/51/inner-demons-gangsters"
+  },
+  {
+    "source_card_name": "Cam and Farrik, Havoc Duo",
+    "target_scryfall_url": "https://scryfall.com/card/om1/77/hobgoblin-mantled-marauder"
+  },
+  {
+    "source_card_name": "Carlo, Suave Schemer",
+    "target_scryfall_url": "https://scryfall.com/card/om1/128/prowler-clawed-thief"
+  },
+  {
+    "source_card_name": "Carriage of Dreams",
+    "target_scryfall_url": "https://scryfall.com/card/om1/162/passenger-ferry"
+  },
+  {
+    "source_card_name": "Chizak, Apex Arachnosaur",
+    "target_scryfall_url": "https://scryfall.com/card/om1/100/spider-rex-daring-dino"
+  },
+  {
+    "source_card_name": "Chosen by Valgavoth",
+    "target_scryfall_url": "https://scryfall.com/card/om1/4/with-great-power"
+  },
+  {
+    "source_card_name": "Cirina Bargainspinner",
+    "target_scryfall_url": "https://scryfall.com/card/om1/130/sun-spider-nimble-webber"
+  },
+  {
+    "source_card_name": "Clandestine Work",
+    "target_scryfall_url": "https://scryfall.com/card/om1/52/risky-research"
+  },
+  {
+    "source_card_name": "Confessor's Bindings",
+    "target_scryfall_url": "https://scryfall.com/card/om1/6/rent-is-due"
+  },
+  {
+    "source_card_name": "Crash, Reckless Endrider",
+    "target_scryfall_url": "https://scryfall.com/card/om1/131/shriek-treblemaker"
+  },
+  {
+    "source_card_name": "Crime-Scene Instructor",
+    "target_scryfall_url": "https://scryfall.com/card/om1/8/selfless-police-captain"
+  },
+  {
+    "source_card_name": "Cruel Caracals",
+    "target_scryfall_url": "https://scryfall.com/card/om1/103/kravens-cats"
+  },
+  {
+    "source_card_name": "Damning Caress",
+    "target_scryfall_url": "https://scryfall.com/card/om1/54/venoms-hunger"
+  },
+  {
+    "source_card_name": "Darval, Whose Web Protects",
+    "target_scryfall_url": "https://scryfall.com/card/om1/9/spider-man-web-slinger"
+  },
+  {
+    "source_card_name": "Data Scrubber",
+    "target_scryfall_url": "https://scryfall.com/card/om1/163/mechanical-mobster"
+  },
+  {
+    "source_card_name": "Deathflame Burst",
+    "target_scryfall_url": "https://scryfall.com/card/om1/78/electros-bolt"
+  },
+  {
+    "source_card_name": "Demera, Soul of a Spider",
+    "target_scryfall_url": "https://scryfall.com/card/om1/132/mary-jane-watson"
+  },
+  {
+    "source_card_name": "Desecrex, Gift of Servitude",
+    "target_scryfall_url": "https://scryfall.com/card/om1/133/carnage-crimson-chaos"
+  },
+  {
+    "source_card_name": "Detect Intrusion",
+    "target_scryfall_url": "https://scryfall.com/card/om1/28/spider-sense"
+  },
+  {
+    "source_card_name": "Diligent Webkeepers",
+    "target_scryfall_url": "https://scryfall.com/card/om1/134/web-warriors"
+  },
+  {
+    "source_card_name": "Dreadfang, Loathed by Fans",
+    "target_scryfall_url": "https://scryfall.com/card/om1/135/kraven-proud-predator"
+  },
+  {
+    "source_card_name": "Drix Interception",
+    "target_scryfall_url": "https://scryfall.com/card/om1/29/amazing-acrobatics"
+  },
+  {
+    "source_card_name": "Druneth, Reviver of the Hive",
+    "target_scryfall_url": "https://scryfall.com/card/om1/136/jackal-genius-geneticist"
+  },
+  {
+    "source_card_name": "Duskmourn's Claim",
+    "target_scryfall_url": "https://scryfall.com/card/om1/55/parker-luck"
+  },
+  {
+    "source_card_name": "Eccentric Arachnologist",
+    "target_scryfall_url": "https://scryfall.com/card/om1/104/guy-in-the-chair"
+  },
+  {
+    "source_card_name": "Egrix the Bile Bulwark",
+    "target_scryfall_url": "https://scryfall.com/card/om1/56/gwenom-remorseless"
+  },
+  {
+    "source_card_name": "Error-9, Viral Node",
+    "target_scryfall_url": "https://scryfall.com/card/om1/165/living-brain-mechanical-marvel"
+  },
+  {
+    "source_card_name": "Exclusive Nightclub",
+    "target_scryfall_url": "https://scryfall.com/card/om1/179/oscorp-industries"
+  },
+  {
+    "source_card_name": "Eztli of the Thousand Moons",
+    "target_scryfall_url": "https://scryfall.com/card/om1/10/starling-aerial-ally"
+  },
+  {
+    "source_card_name": "Fateweaver",
+    "target_scryfall_url": "https://scryfall.com/card/om1/105/radioactive-spider"
+  },
+  {
+    "source_card_name": "Favored Fighter",
+    "target_scryfall_url": "https://scryfall.com/card/om1/106/professional-wrestler"
+  },
+  {
+    "source_card_name": "Fearsome Ridgeline",
+    "target_scryfall_url": "https://scryfall.com/card/om1/180/daily-bugle-building"
+  },
+  {
+    "source_card_name": "Fire-Brained Scheme",
+    "target_scryfall_url": "https://scryfall.com/card/om1/79/heroes-hangout"
+  },
+  {
+    "source_card_name": "Fizik, Etherium Mechanic",
+    "target_scryfall_url": "https://scryfall.com/card/om1/166/iron-spider-stark-upgrade"
+  },
+  {
+    "source_card_name": "Freestrider Aces",
+    "target_scryfall_url": "https://scryfall.com/card/om1/11/wild-pack-squad"
+  },
+  {
+    "source_card_name": "Full-Throttle Fanatic",
+    "target_scryfall_url": "https://scryfall.com/card/om1/80/taxi-driver"
+  },
+  {
+    "source_card_name": "Galvanized Workforce",
+    "target_scryfall_url": "https://scryfall.com/card/om1/81/angry-rabble"
+  },
+  {
+    "source_card_name": "Generous Betty Wray",
+    "target_scryfall_url": "https://scryfall.com/card/om1/12/silver-sable-mercenary-leader"
+  },
+  {
+    "source_card_name": "Giantcraft Helm",
+    "target_scryfall_url": "https://scryfall.com/card/om1/167/doc-ocks-tentacles"
+  },
+  {
+    "source_card_name": "Gloria, the Great Armorer",
+    "target_scryfall_url": "https://scryfall.com/card/om1/138/ara%C3%B1a-heart-of-the-spider"
+  },
+  {
+    "source_card_name": "Goro Rel, Scourge to Spiders",
+    "target_scryfall_url": "https://scryfall.com/card/om1/168/spider-slayer-hatred-honed"
+  },
+  {
+    "source_card_name": "Hex of Undeath",
+    "target_scryfall_url": "https://scryfall.com/card/om1/57/behold-the-sinister-six!"
+  },
+  {
+    "source_card_name": "Hide in Mundanity",
+    "target_scryfall_url": "https://scryfall.com/card/om1/31/spider-man-no-more"
+  },
+  {
+    "source_card_name": "Janai and Hoppy, Roofskippers",
+    "target_scryfall_url": "https://scryfall.com/card/om1/139/spider-girl-legacy-hero"
+  },
+  {
+    "source_card_name": "Kavaero, Mind-Bitten",
+    "target_scryfall_url": "https://scryfall.com/card/om1/140/superior-spider-man"
+  },
+  {
+    "source_card_name": "Kazuo, Ruthless Rival",
+    "target_scryfall_url": "https://scryfall.com/card/om1/83/shocker-unshakable"
+  },
+  {
+    "source_card_name": "Kephon, Rage Incubator",
+    "target_scryfall_url": "https://scryfall.com/card/om1/84/stegron-the-dinosaur-man"
+  },
+  {
+    "source_card_name": "King of the Coldblood Curse",
+    "target_scryfall_url": "https://scryfall.com/card/om1/108/lizard-connorss-curse"
+  },
+  {
+    "source_card_name": "Kivni, Orb Weaver",
+    "target_scryfall_url": "https://scryfall.com/card/om1/141/scarlet-spider-kaine"
+  },
+  {
+    "source_card_name": "Knife Trick",
+    "target_scryfall_url": "https://scryfall.com/card/om1/142/pumpkin-bombardment"
+  },
+  {
+    "source_card_name": "Kraza, the Swarm as One",
+    "target_scryfall_url": "https://scryfall.com/card/om1/85/spider-punk"
+  },
+  {
+    "source_card_name": "Kroble, Envoy of the Bog",
+    "target_scryfall_url": "https://scryfall.com/card/om1/59/spider-man-noir"
+  },
+  {
+    "source_card_name": "Kumonosu, the Watchful",
+    "target_scryfall_url": "https://scryfall.com/card/om1/143/spdr-piloted-by-peni"
+  },
+  {
+    "source_card_name": "Lavaborn Goblins",
+    "target_scryfall_url": "https://scryfall.com/card/om1/86/raging-goblinoids"
+  },
+  {
+    "source_card_name": "Lavabrink Repels the Magmaloth",
+    "target_scryfall_url": "https://scryfall.com/card/om1/87/maximum-carnage"
+  },
+  {
+    "source_card_name": "Lazlo, Enthusiastic Accuser",
+    "target_scryfall_url": "https://scryfall.com/card/om1/88/j-jonah-jameson"
+  },
+  {
+    "source_card_name": "Leyline Weaver",
+    "target_scryfall_url": "https://scryfall.com/card/om1/144/spider-manifestation"
+  },
+  {
+    "source_card_name": "Lively Leap",
+    "target_scryfall_url": "https://scryfall.com/card/om1/13/thwip!"
+  },
+  {
+    "source_card_name": "Lost in Littjara",
+    "target_scryfall_url": "https://scryfall.com/card/om1/33/the-clone-saga"
+  },
+  {
+    "source_card_name": "Luis, Pompous Pillager",
+    "target_scryfall_url": "https://scryfall.com/card/om1/60/morlun-devourer-of-spiders"
+  },
+  {
+    "source_card_name": "Makdee and Itla, Skysnarers",
+    "target_scryfall_url": "https://scryfall.com/card/om1/145/spider-woman-stunning-savior"
+  },
+  {
+    "source_card_name": "Margot, On the Case",
+    "target_scryfall_url": "https://scryfall.com/card/om1/146/wraith-vicious-vigilante"
+  },
+  {
+    "source_card_name": "Merata, Neuron Hacker",
+    "target_scryfall_url": "https://scryfall.com/card/om1/34/lady-octopus-inspired-inventor"
+  },
+  {
+    "source_card_name": "Miasmic Mist",
+    "target_scryfall_url": "https://scryfall.com/card/om1/62/sandmans-quicksand"
+  },
+  {
+    "source_card_name": "Mothwing Shroud",
+    "target_scryfall_url": "https://scryfall.com/card/om1/15/web-up"
+  },
+  {
+    "source_card_name": "Neach, Pinnacle Pariah",
+    "target_scryfall_url": "https://scryfall.com/card/om1/148/doctor-octopus-master-planner"
+  },
+  {
+    "source_card_name": "Nill, Vessel of Valgavoth",
+    "target_scryfall_url": "https://scryfall.com/card/om1/63/tombstone-career-criminal"
+  },
+  {
+    "source_card_name": "Nu and Sumi, Career Criminals",
+    "target_scryfall_url": "https://scryfall.com/card/om1/149/green-goblin-revenant"
+  },
+  {
+    "source_card_name": "Obscura Alleylurkers",
+    "target_scryfall_url": "https://scryfall.com/card/om1/35/doc-ocks-henchmen"
+  },
+  {
+    "source_card_name": "Olx, Mouth to Many Eyes",
+    "target_scryfall_url": "https://scryfall.com/card/om1/36/madame-web-clairvoyant"
+  },
+  {
+    "source_card_name": "Opulent Valet",
+    "target_scryfall_url": "https://scryfall.com/card/om1/169/news-helicopter"
+  },
+  {
+    "source_card_name": "Orris, Last of the Web Lords",
+    "target_scryfall_url": "https://scryfall.com/card/om1/110/ezekiel-sims-spider-totem"
+  },
+  {
+    "source_card_name": "Outsmart the Amateur",
+    "target_scryfall_url": "https://scryfall.com/card/om1/37/school-daze"
+  },
+  {
+    "source_card_name": "Ozor, Chronicler of Collapse",
+    "target_scryfall_url": "https://scryfall.com/card/om1/38/doc-ock-sinister-scientist"
+  },
+  {
+    "source_card_name": "Perfected Pastry",
+    "target_scryfall_url": "https://scryfall.com/card/om1/170/bagel-and-schmear"
+  },
+  {
+    "source_card_name": "Perilous Lunge",
+    "target_scryfall_url": "https://scryfall.com/card/om1/111/kapow!"
+  },
+  {
+    "source_card_name": "Phantasmal Vision",
+    "target_scryfall_url": "https://scryfall.com/card/om1/39/mysterios-phantasm"
+  },
+  {
+    "source_card_name": "Phenomena Recorder",
+    "target_scryfall_url": "https://scryfall.com/card/om1/171/peter-parkers-camera"
+  },
+  {
+    "source_card_name": "Pinnacle Research Team",
+    "target_scryfall_url": "https://scryfall.com/card/om1/40/oscorp-research-team"
+  },
+  {
+    "source_card_name": "Principled Referee",
+    "target_scryfall_url": "https://scryfall.com/card/om1/16/daily-bugle-reporters"
+  },
+  {
+    "source_card_name": "Qoneus, Horizon Splicer",
+    "target_scryfall_url": "https://scryfall.com/card/om1/150/the-spot-living-portal"
+  },
+  {
+    "source_card_name": "Quint's Insight",
+    "target_scryfall_url": "https://scryfall.com/card/om1/90/shadow-of-the-goblin"
+  },
+  {
+    "source_card_name": "Reality Fulcrum",
+    "target_scryfall_url": "https://scryfall.com/card/om1/172/interdimensional-web-watch"
+  },
+  {
+    "source_card_name": "Remarkable Readings",
+    "target_scryfall_url": "https://scryfall.com/card/om1/17/friendly-neighborhood"
+  },
+  {
+    "source_card_name": "Remorseless Coup",
+    "target_scryfall_url": "https://scryfall.com/card/om1/65/the-spots-portal"
+  },
+  {
+    "source_card_name": "Restless Razorkin",
+    "target_scryfall_url": "https://scryfall.com/card/om1/91/superior-foes-of-spider-man"
+  },
+  {
+    "source_card_name": "Rhilex the Accursed",
+    "target_scryfall_url": "https://scryfall.com/card/om1/66/agent-venom"
+  },
+  {
+    "source_card_name": "Rishei, Getaway Accomplice",
+    "target_scryfall_url": "https://scryfall.com/card/om1/152/vulture-scheming-scavenger"
+  },
+  {
+    "source_card_name": "Rizna, the Spider-Crowned",
+    "target_scryfall_url": "https://scryfall.com/card/om1/92/spinneret-and-spiderling"
+  },
+  {
+    "source_card_name": "Rouse the Swarm",
+    "target_scryfall_url": "https://scryfall.com/card/om1/112/wall-crawl"
+  },
+  {
+    "source_card_name": "Ruzic, Booed but Victorious",
+    "target_scryfall_url": "https://scryfall.com/card/om1/153/ultimate-green-goblin"
+  },
+  {
+    "source_card_name": "Sadistic String-Puller",
+    "target_scryfall_url": "https://scryfall.com/card/om1/94/spider-islanders"
+  },
+  {
+    "source_card_name": "Sarn of the Silken Throne",
+    "target_scryfall_url": "https://scryfall.com/card/om1/18/spider-uk"
+  },
+  {
+    "source_card_name": "Scions of the Ur-Spider",
+    "target_scryfall_url": "https://scryfall.com/card/om1/154/cosmic-spider-man"
+  },
+  {
+    "source_card_name": "Scorvus Ames, Crimelord",
+    "target_scryfall_url": "https://scryfall.com/card/om1/68/scorpion-seething-striker"
+  },
+  {
+    "source_card_name": "Scuttling Spidercoach",
+    "target_scryfall_url": "https://scryfall.com/card/om1/173/spider-mobile"
+  },
+  {
+    "source_card_name": "Selesnya Archivist",
+    "target_scryfall_url": "https://scryfall.com/card/om1/115/damage-control-crew"
+  },
+  {
+    "source_card_name": "Skittering Kitten",
+    "target_scryfall_url": "https://scryfall.com/card/om1/96/masked-meower"
+  },
+  {
+    "source_card_name": "Skv'x the Augmenter",
+    "target_scryfall_url": "https://scryfall.com/card/om1/155/symbiote-spider-man"
+  },
+  {
+    "source_card_name": "Snatch Back",
+    "target_scryfall_url": "https://scryfall.com/card/om1/43/whoosh!"
+  },
+  {
+    "source_card_name": "Spectral Restitching",
+    "target_scryfall_url": "https://scryfall.com/card/om1/44/hide-on-the-ceiling"
+  },
+  {
+    "source_card_name": "Steelweb Surveyor",
+    "target_scryfall_url": "https://scryfall.com/card/om1/174/spider-bot"
+  },
+  {
+    "source_card_name": "Stitcher's Wings",
+    "target_scryfall_url": "https://scryfall.com/card/om1/175/rocket-powered-goblin-glider"
+  },
+  {
+    "source_card_name": "Tarantusk, Unwisely Awoken",
+    "target_scryfall_url": "https://scryfall.com/card/om1/118/spider-ham-peter-porker"
+  },
+  {
+    "source_card_name": "Tearle, Entropic Hunger",
+    "target_scryfall_url": "https://scryfall.com/card/om1/156/morbius-the-living-vampire"
+  },
+  {
+    "source_card_name": "Temple Trap",
+    "target_scryfall_url": "https://scryfall.com/card/om1/176/steel-wrecking-ball"
+  },
+  {
+    "source_card_name": "Tethex, Gift of Malice",
+    "target_scryfall_url": "https://scryfall.com/card/om1/70/venom-evil-unleashed"
+  },
+  {
+    "source_card_name": "The Clutter Cluster",
+    "target_scryfall_url": "https://scryfall.com/card/om1/101/spiders-man-heroic-horde"
+  },
+  {
+    "source_card_name": "The House Grows Hungry",
+    "target_scryfall_url": "https://scryfall.com/card/om1/58/the-death-of-gwen-stacy"
+  },
+  {
+    "source_card_name": "The Infernus",
+    "target_scryfall_url": "https://scryfall.com/card/om1/82/molten-man-inferno-incarnate"
+  },
+  {
+    "source_card_name": "The Scouring Stormsoul",
+    "target_scryfall_url": "https://scryfall.com/card/om1/113/sandman-shifting-scoundrel"
+  },
+  {
+    "source_card_name": "The Terminus of Return",
+    "target_scryfall_url": "https://scryfall.com/card/om1/69/the-soul-stone"
+  },
+  {
+    "source_card_name": "The Watcher on the Road",
+    "target_scryfall_url": "https://scryfall.com/card/om1/48/mysterio-master-of-illusion"
+  },
+  {
+    "source_card_name": "Through the Omenpath",
+    "target_scryfall_url": "https://scryfall.com/card/om1/120/web-of-life-and-destiny"
+  },
+  {
+    "source_card_name": "Treat Trolley",
+    "target_scryfall_url": "https://scryfall.com/card/om1/177/hot-dog-cart"
+  },
+  {
+    "source_card_name": "Uharis, the Stormspinner",
+    "target_scryfall_url": "https://scryfall.com/card/om1/157/spider-man-2099"
+  },
+  {
+    "source_card_name": "Vazin, Two-Faced Trickster",
+    "target_scryfall_url": "https://scryfall.com/card/om1/46/chameleon-master-of-disguise"
+  },
+  {
+    "source_card_name": "Verilax the Havenskin",
+    "target_scryfall_url": "https://scryfall.com/card/om1/22/anti-venom-horrifying-healer"
+  },
+  {
+    "source_card_name": "Vexed Bots",
+    "target_scryfall_url": "https://scryfall.com/card/om1/47/flying-octobot"
+  },
+  {
+    "source_card_name": "Vinewoven Chariot",
+    "target_scryfall_url": "https://scryfall.com/card/om1/178/subway-train"
+  },
+  {
+    "source_card_name": "Wardens of Silverweb Summit",
+    "target_scryfall_url": "https://scryfall.com/card/om1/97/spider-gwen-free-spirit"
+  },
+  {
+    "source_card_name": "Wekhdu, Midnight Hunter",
+    "target_scryfall_url": "https://scryfall.com/card/om1/73/swarm-being-of-bees"
+  },
+  {
+    "source_card_name": "Withar, Cocoon Keeper",
+    "target_scryfall_url": "https://scryfall.com/card/om1/158/mister-negative"
+  },
+  {
+    "source_card_name": "Wonderweave Aerialist",
+    "target_scryfall_url": "https://scryfall.com/card/om1/159/skyward-spider"
+  },
+  {
+    "source_card_name": "Wrench, Speedway Saboteur",
+    "target_scryfall_url": "https://scryfall.com/card/om1/74/black-cat-cunning-thief"
+  },
+  {
+    "source_card_name": "Xecau, Predation's Shadow",
+    "target_scryfall_url": "https://scryfall.com/card/om1/160/rhino-barreling-brute"
+  },
+  {
+    "source_card_name": "Yera and Oski, Weaver and Guide",
+    "target_scryfall_url": "https://scryfall.com/card/om1/23/arachne-psionic-weaver"
+  },
+  {
+    "source_card_name": "Zan, Tunnelweb Explorer",
+    "target_scryfall_url": "https://scryfall.com/card/om1/122/spider-man-brooklyn-visionary"
+  },
+  {
+    "source_card_name": "Zora, Spider Fancier",
+    "target_scryfall_url": "https://scryfall.com/card/om1/24/aunt-may"
+  }
+]
