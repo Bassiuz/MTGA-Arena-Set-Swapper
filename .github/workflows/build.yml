@@ -1,0 +1,40 @@
+name: Build Executables
+on: [push]
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Windows EXE
+        run: |
+          pip install pyinstaller
+          pyinstaller --name "MTGA_Art_Swapper" \
+                     --onefile \
+                     --windowed \
+                     --add-data "assets;assets" \
+                     --icon "assets/icon.ico" \
+                     app.py
+      - name: Upload Windows EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-exe
+          path: dist/MTGA_Art_Swapper.exe
+
+  build-mac:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Mac App
+        run: |
+          pip install pyinstaller
+          pyinstaller --name "MTGA_Art_Swapper" \
+                     --onefile \
+                     --windowed \
+                     --add-data "assets:assets" \
+                     --icon "assets/icon.icns" \
+                     app.py
+      - name: Upload Mac App
+        uses: actions/upload-artifact@v4
+        with:
+          name: mac-app
+          path: dist/MTGA_Art_Swapper.app
