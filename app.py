@@ -302,7 +302,7 @@ def generate_swap_file(source_set_code: str, target_set_code: str):
     # 2. Create maps from Oracle ID to card data for efficient matching
     source_map_by_oracle = {card['oracle_id']: card for card in source_cards if 'oracle_id' in card}
     target_map_by_oracle = {card['oracle_id']: card for card in target_cards if 'oracle_id' in card}
-    
+
     print(f"\nFound {len(source_map_by_oracle)} functional cards in {source_set_code.upper()}.")
     print(f"Found {len(target_map_by_oracle)} functional cards in {target_set_code.upper()}.")
 
@@ -317,10 +317,9 @@ def generate_swap_file(source_set_code: str, target_set_code: str):
 
         source_name = source_card.get('name')
         target_name = target_card.get('name')
-        
+
         print(f" - Processing match for '{source_name}' -> '{target_name}'")
 
-        # Use the source card's set and collector number, as this is the one in the Arena DB
         expansion_code = source_card.get('set', '').upper()
         collector_number = source_card.get('collector_number')
         target_api_url = target_card.get('uri')
@@ -341,12 +340,15 @@ def generate_swap_file(source_set_code: str, target_set_code: str):
         print(f"\nℹ️ No valid matches found between {source_set_code.upper()} and {target_set_code.upper()}.")
         return
 
+    # --- MODIFIED PART ---
+    # Save swaps.json to the user's Downloads folder for better permissions on macOS
+    output_path = Path.home() / "Downloads" / "swaps.json"
     try:
-        with open("swaps.json", "w") as f:
+        with open(output_path, "w") as f:
             json.dump(swaps_to_generate, f, indent=4)
-        print(f"\n✅ Successfully generated `swaps.json` with {len(swaps_to_generate)} entries.")
+        print(f"\n✅ Successfully generated `swaps.json` in your Downloads folder.")
     except IOError as e:
-        print(f"❌ Error writing to `swaps.json`: {e}")
+        print(f"❌ Error writing to `swaps.json` in Downloads folder: {e}")
 
 
 def perform_swap(mtga_path: Optional[Path]):
@@ -354,26 +356,30 @@ def perform_swap(mtga_path: Optional[Path]):
     if not mtga_path:
         print("\n❌ MTG Arena path not set. Please find or select it first.")
         return
-    
+
     print("\n--- Starting Card Swap Process ---")
     data_path = get_data_path(mtga_path)
-    
+
+    # --- MODIFIED PART ---
+    # Look for swaps.json in the user's Downloads folder
+    swaps_file_path = Path.home() / "Downloads" / "swaps.json"
     try:
-        with open("swaps.json", "r") as f: swaps_config = json.load(f)
+        with open(swaps_file_path, "r") as f: swaps_config = json.load(f)
+        print(f"   -> Found swaps.json in your Downloads folder.")
     except FileNotFoundError:
-        print("❌ `swaps.json` not found! Please generate it first."); return
+        print(f"❌ `swaps.json` not found in your Downloads folder! Please generate it first."); return
     except json.JSONDecodeError:
         print("❌ `swaps.json` is not valid JSON. Please check its syntax."); return
 
     db_path = get_mtga_database(data_path)
     if not db_path: return
-        
+
     card_data_map = get_card_and_art_ids_from_db(db_path, swaps_config)
-    
+
     found_count = len(card_data_map)
     total_count = len(swaps_config)
     print(f"\nFound {found_count} out of {total_count} cards in the database.")
-    
+
     if found_count < total_count:
         source_names_in_config = {swap['source_card_name'] for swap in swaps_config}
         missing_cards = source_names_in_config - set(card_data_map.keys())
@@ -384,15 +390,16 @@ def perform_swap(mtga_path: Optional[Path]):
         return
 
     temp_dir = Path("./temp_art")
-    backup_dir = Path("./MTGA_Swapper_Backups")
+    backup_dir = Path.home() / "MTGA_Swapper_Backups" # Also move backups to a user folder
     temp_dir.mkdir(exist_ok=True); backup_dir.mkdir(exist_ok=True)
-    
+
     print("\nProcessing swaps...")
+    # (The rest of the function remains the same)
     try:
         for swap in swaps_config:
             source_name = swap['source_card_name']
             if source_name not in card_data_map: continue
-                
+
             card_id, art_id = card_data_map[source_name]
             print(f"\nProcessing swap for '{source_name}' (ID: {card_id})")
 
@@ -403,45 +410,70 @@ def perform_swap(mtga_path: Optional[Path]):
 
             target_data = get_card_data_from_url(target_url)
             if not target_data: print(f"   Skipping '{source_name}' due to API error."); continue
-                
+
             target_name = target_data.get('name', source_name)
-            
+
             target_type_line = target_data.get('type_line', '')
             image_uris = target_data.get('image_uris', {})
             image_url = None
+            is_saga = "Saga" in target_type_line
 
-            image_url = image_uris.get('art_crop')
+            if is_saga:
+                image_url = image_uris.get('png')
+                print("   -> Saga detected. Using full card image to preserve chapters.")
+            else:
+                image_url = image_uris.get('art_crop')
 
             if not image_url: 
                 print(f"   Could not find art for '{target_name}'. Skipping."); continue
-            
-            image_path = temp_dir / f"{card_id}.jpg"
+
+            image_path = temp_dir / f"{card_id}.png"
             if not download_image(image_url, image_path): print(f"   Failed to download art for '{target_name}'. Skipping."); continue
 
             art_bundle_path, cards_bundle_path = find_asset_bundles(data_path, card_id, art_id)
             if not all([art_bundle_path, cards_bundle_path]): print(f"   ❌ Could not locate asset bundles for '{source_name}'. Skipping."); continue
 
-            for bundle_path in [art_bundle_path, cards_bundle_path]:
+            for bundle_path in {art_bundle_path, cards_bundle_path}:
                 if bundle_path:
                     backup_path = backup_dir / bundle_path.name
                     if not backup_path.exists():
                         shutil.copy(bundle_path, backup_dir)
-                        print(f"      - Backed up {bundle_path.name}")
+                        print(f"        - Backed up {bundle_path.name}")
                     else:
-                        print(f"      - Backup for {bundle_path.name} already exists. Skipping.")
-            
-            env_art = UnityPy.load(str(art_bundle_path))
-            
-            all_textures = [obj.read() for obj in env_art.objects if obj.type.name == "Texture2D"]
-            
-            textures_with_image = [tex for tex in all_textures if hasattr(tex, 'image') and tex.image]
+                        print(f"        - Backup for {bundle_path.name} already exists. Skipping.")
 
-            if textures_with_image:
-                textures_with_image.sort(key=lambda x: x.image.width * x.image.height, reverse=True)
-                main_art_texture = textures_with_image[0]
-                main_art_texture.image = Image.open(image_path)
-                main_art_texture.save()
-                
+            env_art = UnityPy.load(str(art_bundle_path))
+
+            all_textures = [obj for obj in env_art.objects if obj.type.name == "Texture2D"]
+
+            if all_textures:
+                all_textures.sort(key=lambda x: x.read().m_Width * x.read().m_Height if hasattr(x.read(), 'm_Width') else 0, reverse=True)
+                main_art_texture_obj = all_textures[0]
+                main_art_texture = main_art_texture_obj.read()
+
+                img = Image.open(image_path)
+                if is_saga:
+                    print("      -> Resizing Saga art to fit horizontal frame...")
+                    target_width, target_height = main_art_texture.m_Width, main_art_texture.m_Height
+
+                    original_width, original_height = img.size
+                    new_height = int(target_width * (original_height / original_width))
+
+                    if new_height > target_height:
+                        new_height = target_height
+                        target_width = int(new_height * (original_height / original_height))
+
+                    resized_img = img.resize((target_width, new_height), Image.Resampling.LANCZOS)
+
+                    final_img = Image.new("RGB", (main_art_texture.m_Width, main_art_texture.m_Height), (0, 0, 0))
+                    paste_x = (main_art_texture.m_Width - target_width) // 2
+                    paste_y = (main_art_texture.m_Height - new_height) // 2
+                    final_img.paste(resized_img, (paste_x, paste_y))
+                    img = final_img
+
+                main_art_texture.image = img
+                main_art_texture_obj.save(main_art_texture)
+
                 with open(art_bundle_path, "wb") as f:
                     f.write(env_art.file.save())
                 print(f"   -> Art replaced in: {art_bundle_path.name}")
@@ -458,11 +490,13 @@ def perform_swap(mtga_path: Optional[Path]):
                     data = obj.read()
                     if data.m_Name == f"Card_Title_{card_id}":
                         data.text = target_name
-                        data.save()
-                        with open(cards_bundle_path, "wb") as f:
-                            f.write(env_cards.file.save())
+                        obj.save(data)
                         print(f"   -> Name replaced in: {cards_bundle_path.name}")
                         break
+
+            with open(cards_bundle_path, "wb") as f:
+                f.write(env_cards.file.save())
+
     finally:
         if temp_dir.exists():
             shutil.rmtree(temp_dir)
