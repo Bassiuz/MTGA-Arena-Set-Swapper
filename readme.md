@@ -1,76 +1,79 @@
-MTG Arena Set Swapper (GUI Version)
+# MTG Arena Set Swapper
 
-A user-friendly application to swap the art and names of specific cards in your MTG Arena client. This is designed to replace confusing digital-only card versions (like the "Through the Omenpaths" set) with their paper counterparts.
+A user-friendly application to swap the art and names of specific cards in your MTG Arena client.
 
-This tool only affects your local game client. Your opponents will see the default card art and names.
-⚠️ Important Warning: Terms of Service
+---
 
-Modifying game files is strictly against the Wizards of the Coast Terms of Service. While WotC has historically not banned players for purely cosmetic, client-side mods, using this tool is at your own risk. The developers of this script are not responsible for any actions taken against your account.
+## 🚀 How to Install and Use
 
-An MTG Arena update will likely undo these changes, and you will need to run the application again.
-How to Use the Application
+1.  **Download the Application:**
+    * Go to the [**Releases Page**](https://github.com/YOUR_USERNAME/YOUR_REPO/releases).
+    * For **Windows**, download the `MTGA Set Swapper.exe` file.
+    * For **macOS**, download the `MTGA Set Swapper.app.zip` file.
 
-    Generate a Swap File:
+2.  **Run the Application:**
+    * **On Windows:** Double-click the `.exe` file. You may get a "Windows protected your PC" popup; click "More info" and then "Run anyway".
+    * **On macOS:** Unzip the file and double-click the `.app`. You may get a security warning; open "System Settings" > "Privacy & Security", scroll down, and click "Open Anyway".
 
-        Enter a 3-letter set code into the text box (e.g., om1 for Through the Omenpaths, big for Breaking News).
+3.  **Follow the In-App Instructions:**
+    * Use the "Find Auto" button to locate your game installation.
+    * Generate a `swaps.json` file for the sets you want to change (e.g., Source `OM1`, Target `SPM`).
+    * Click "Apply Swaps" to modify the game files.
+    * Click "Restore Originals" to revert all changes.
 
-        Click the "Generate swaps.json" button. The application will download the necessary card data and create a swaps.json file in the same folder.
+---
 
-    Apply Swaps:
+### ⚠️ Important Warning: Terms of Service
 
-        Once you have a swaps.json file, click the "Apply Swaps" button. The application will find your MTG Arena installation, back up the original files, and apply the new art and names.
+Modifying game files is strictly against the Wizards of the Coast Terms of Service. While WotC has historically not banned players for purely cosmetic, client-side mods, **using this tool is at your own risk**. The developers of this script are not responsible for any actions taken against your account.
 
-    Restore Originals:
+An MTG Arena update will likely undo these changes, and you will need to run the application again. This tool only affects your local game client.
 
-        To undo all changes, click the "Restore Originals" button. This will copy the backups and restore the game to its original state.
+---
 
-How to Create the One-Click Executable
+### Credits and Inspiration
 
-To distribute this application to users who don't have Python, you need to package it into an executable.
+This project was heavily inspired by the original **MTGA_Swapper** by **[BobJr23](https://github.com/BobJr23)**. A huge thank you for their foundational work, which provided the core logic and proof of concept. Please check out their original repository:
+* [**github.com/BobJr23/MTGA_Swapper**](https://github.com/BobJr23/MTGA_Swapper)
 
+---
+
+### For Developers: How to Build the Executable
+
+To package this application into a single executable file yourself:
+
+To share this application, you can package it into a single executable file.
 Prerequisites:
 
-    You must have Python 3.8+ installed on your build machine.
+    Python 3.8+
 
-    You need an icon file (optional, but recommended).
+    The project files organized in the following structure:
 
-        For Windows, you need an .ico file.
+    /YourProjectFolder
+    ├── app.py
+    ├── requirements.txt
+    ├── build_win.bat
+    ├── build_mac.command
+    └── /assets
+        ├── icon.ico
+        └── icon.icns
 
-        For macOS, you need an .icns file.
+Build Steps (One-Click):
 
-Build Steps:
+    For Windows:
 
-    Setup Folder: Place mtga_set_swapper_gui.py and requirements.txt in a folder. If you have an icon, place it there too.
+        Make sure you have Python installed.
 
-    Install Libraries: Open a terminal or command prompt in that folder and run:
+        Double-click build_win.bat.
 
-    pip install -r requirements.txt
-    pip install pyinstaller
+    For macOS:
 
-    Run the PyInstaller Command:
+        Open the Terminal application.
 
-        For Windows (.exe):
+        Navigate to your project folder (e.g., cd ~/Downloads/YourProjectFolder).
 
-        pyinstaller --onefile --windowed --name="MTGA Set Swapper" --icon="your_icon.ico" mtga_set_swapper_gui.py
+        Run this command once to make the script executable: chmod +x build_mac.command
 
-        For macOS (.app):
+        After that, you can simply double-click the build_mac.command file to build the application.
 
-        pyinstaller --onefile --windowed --name="MTGA Set Swapper" --icon="your_icon.icns" mtga_set_swapper_gui.py
-
-    Flags Explained:
-
-        --onefile: Bundles everything into a single executable file.
-
-        --windowed: Prevents a black console window from appearing behind your GUI.
-
-        --name: Sets the name of your final application.
-
-        --icon: Attaches your custom icon to the executable.
-
-    Distribute:
-
-        After the command finishes, look inside the newly created dist folder.
-
-        You will find MTGA Set Swapper.exe (on Windows) or MTGA Set Swapper.app (on macOS).
-
-        This is your standalone application! You can zip it and share it with others. They will not need to install Python to run it.
+After the script finishes, your standalone application (MTGA Set Swapper.exe or MTGA Set Swapper.app) will be located in the dist folder.

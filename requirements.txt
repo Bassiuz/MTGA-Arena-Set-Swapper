@@ -1,2 +1,5 @@
 UnityPy
 requests
+pycryptodome
+Pillow
+pyinstaller
